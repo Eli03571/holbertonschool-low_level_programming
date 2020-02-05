@@ -1,0 +1,2 @@
+!#!/bin/bash
+lenguaje C
