@@ -1,11 +1,16 @@
 #include <stdio.h>
+/**
+ * main - putchar of number
+ * Return: return (0)
+ */
+int main(void)
+{
+	char sh;
 
-int main (void)
-{	
-	int i;
-	char sh;	
-	for (i = 97; i <= 122; i++)
-	sh = putchar (i);
-	printf("%c", sh);
+	for (sh = 'a'; sh <= 'z'; sh++)
+	  {
+	putchar(sh);
+	}
+	putchar('\n');
 	return (0);
 }
