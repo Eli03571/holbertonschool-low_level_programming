@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: print from a to z chars
+ * Description: print from a to z chars followed by chars from A to Z
  * Return: 0
  */
 int main(void)
