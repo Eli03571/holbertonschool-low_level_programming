@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
+	char holberton[10] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
 	int i;
 
 	for (i = 0; i < 10; i++)
