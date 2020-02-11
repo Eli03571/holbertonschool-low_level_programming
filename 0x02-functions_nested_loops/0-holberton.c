@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-	int i;
 	char holberton[9] = {'H', 'o', 'l', 'b', 'e', 'r', 't', 'o', 'n'};
 
-	for (i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 	{
 
 		_putchar (holberton[i]);
 	}
+
+	_putchar('\n');
 
 	return (0);
 
