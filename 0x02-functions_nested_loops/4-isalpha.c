@@ -1,12 +1,13 @@
 #include "holberton.h"
+
 /**
- * main - check the code for Holberton School students.
- *
+ * _isalpha - check the code for Holberton School students.
+ *@c: alphabet lowercase
  * Return: Always 0.
  */
 int _isalpha(int c)
 {
-	if (c >= 97 || c >= 65)
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 		return (1);
 	else
 		return (0);
