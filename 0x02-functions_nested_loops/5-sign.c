@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_sing - check less and greater.
+ *print_sign - check less and greater.
  *@n: if, else
  * Return: Always 0.
  */
