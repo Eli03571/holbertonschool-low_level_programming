@@ -2,7 +2,7 @@
 
 /**
  * print_sing - check less and greater.
- *
+ *@n: if, else
  * Return: Always 0.
  */
 int print_sign(int n)
