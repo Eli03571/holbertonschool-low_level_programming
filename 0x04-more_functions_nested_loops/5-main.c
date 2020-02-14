@@ -9,4 +9,8 @@ int main(void)
 {
     more_numbers();
     return (0);
+<<<<<<< HEAD
+=======
+
+>>>>>>> b3f9ab111992ceacaf6b934cbdb2b5b56bfc2405
 }
