@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * puts2- the function is integer s.
- *@*str: char the pointer
+ *@str: char the pointer
  * Return: Always 0.
  */
 void puts2(char *str)
