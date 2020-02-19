@@ -4,7 +4,6 @@
  *@str: char type
  * Return: Always 0.
  */
-
 void puts_half(char *str)
 {
 	int i = 0;
@@ -13,7 +12,9 @@ void puts_half(char *str)
 	{
 		i++;
 	}
-	for (i /= 2; !!str[i]; i++)
+	i = i / 2;
+
+	for (; !!str[i]; i++)
 	{
 		_putchar(str[i]);
 	}
