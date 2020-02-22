@@ -19,7 +19,7 @@ char *string_toupper(char *s)
 
 		if ((s[j] > 96) && (s[j] < 123))
 		{
-			s[j] ^= 0x20;
+			s[j] = s[j] - 32;
 		}
 	}
 
