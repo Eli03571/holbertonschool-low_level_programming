@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strchr- unction that locates a character in a string.
+ * _strchr - unction that locates a character in a string.
  * @s: char pointer
  * @c: character
  * Return: Nothing.
