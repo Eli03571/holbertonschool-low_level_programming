@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ * _pow_recursion - function that returns the value o.
+ *@x: integer
+ *@y: integer
  * Return: Always 0.
  */
 int _pow_recursion(int x, int y)
@@ -21,6 +22,6 @@ int _pow_recursion(int x, int y)
 	{
 		return (-1);
 	}
-	return (x *_pow_recursion(x,--y));
+	return (x * _pow_recursion(x, --y));
 
 }
