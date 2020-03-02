@@ -7,26 +7,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int count, count1, sum;
 
+	sum = 0;
 	if (argc < 1)
 	{
 		printf("0");
-		return (0);
 	}
-
-	for (int i = 1; i < argc; i++)
+	for (count = 1; count < argc; count++)
 	{
-		for (int j = 0; !!argv[i][j]; j++)
+		sum += atoi(argv[count]);
+		for (count1 = 0; argv[count][count1] != '\0'; count1++)
 		{
-			if (!isdigit(argv[i][j]))
+			if (!(isdigit(argv[count][count1])))
 			{
 				printf("Error\n");
-				return (1);
+				return (0);
 			}
 		}
-		sum = sum + atoi(argv[i]);
 	}
-	printf("%i\n", sum);
+	printf("%d\n", sum);
 	return (0);
 }
