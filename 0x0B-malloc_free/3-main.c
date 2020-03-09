@@ -49,6 +49,7 @@ int main(void)
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
     return (0);
+<<<<<<< HEAD
 }#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -100,4 +101,6 @@ int main(void)
     grid[3][4] = 402;
     print_grid(grid, 6, 4);
     return (0);
+=======
+>>>>>>> a8edf3276387d01a8ac7c03a991e06c541f8e192
 }
