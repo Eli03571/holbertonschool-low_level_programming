@@ -1,6 +1,48 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
+ * print_strings - the finction strings.
+ *@s: char the pointer
+ * Return: Always 0.
+ */
+char *print_strings(char *s)
+{
+	if (s == NULL)
+		s = "(nil)";
+	printf("%s", s);
+	return (", ");
+}
+/**
+ * print_integer - the function integer.
+ *@i: inetegr
+ * Return: Always 0.
+ */
+char *print_integer(int i)
+{
+	printf("%d", i);
+	return (", ");
+}
+/**
+ * print_char - the function char.
+ *@c: char
+ * Return: Always 0.
+ */
+char *print_char(char c)
+{
+	printf("%c", c);
+	return (", ");
+}
+/**
+ * print_float - the function float.
+ *@f: float
+ * Return: Always 0.
+ */
+char *print_float(float f)
+{
+	printf("%f", f);
+	return (", ");
+}
+/**
  * print_all - the finction all.
  *@format: inetegr
  * Return: Always 0.
@@ -8,10 +50,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list number;
-	int d, i, size;
-	char c, *s;
+	int i, size;
 	char *separator;
-	float f;
 
 	va_start(number, format);
 
@@ -29,30 +69,19 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 's':
-				s = va_arg(number, char *);
-				if (s == NULL)
-					s = "(nil)";
-				printf("%s", s);
-				separator = ", ";
+				separator = print_strings(va_arg(number, char *));
 				break;
 			case 'i':
-				d = va_arg(number, int);
-				printf("%d", d);
-				separator = ", ";
+				separator = print_integer(va_arg(number, int));
 				break;
 			case 'c':
-				c = (char) va_arg(number, int);
-				printf("%c", c);
-				separator = ", ";
+				separator = print_char(va_arg(number, int));
 				break;
 			case 'f':
-				f = va_arg(number, double);
-				printf("%f", f);
-				separator = ", ";
+				separator = print_float(va_arg(number, double));
 				break;
 			default:
 				separator = "";
-				break;
 		}
 		if (i != size - 1)
 			printf(separator);
