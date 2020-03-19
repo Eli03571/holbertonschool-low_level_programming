@@ -1,11 +1,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_strings - the finction strings.
+ * print_string - the finction strings.
  *@s: char the pointer
  * Return: Always 0.
  */
-char *print_strings(char *s)
+char *print_string(char *s)
 {
 	if (s == NULL)
 		s = "(nil)";
@@ -68,7 +68,7 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 's':
-				separator = print_strings(va_arg(number, char *));
+				separator = print_string(va_arg(number, char *));
 				break;
 			case 'i':
 				separator = print_integer(va_arg(number, int));
