@@ -50,7 +50,7 @@ char *print_float(float f)
 void print_all(const char * const format, ...)
 {
 	va_list number;
-	int i = 0, size = 0;
+	int i = 0;
 	char *separator = ", ";
 
 	while (format == NULL)
@@ -59,8 +59,6 @@ void print_all(const char * const format, ...)
 		return;
 	}
 	va_start(number, format);
-	while (format[size] != '\0')
-		size++;
 	while (format && format[i])
 	{
 		switch (format[i])
@@ -81,7 +79,7 @@ void print_all(const char * const format, ...)
 				separator = "";
 			break;
 		}
-		if (i != size - 1)
+		if (format[i + 1] != '\0')
 			printf("%s", separator);
 		i++;
 	}
