@@ -79,8 +79,6 @@ void print_all(const char * const format, ...)
 			case 'f':
 				separator = print_float(va_arg(number, double));
 				break;
-			default:
-				separator = "";
 		}
 		if (i != size - 1)
 			printf("%s", separator);
