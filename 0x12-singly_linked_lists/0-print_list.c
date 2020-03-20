@@ -12,6 +12,11 @@ size_t print_list(const list_t *h)
 	unsigned int n;
 	char *s;
 
+	if (h == NULL)
+	{
+		printf("[0]()\n");
+		return (0);
+	}
 	do {
 		s = h->str;
 		n = h->len;
