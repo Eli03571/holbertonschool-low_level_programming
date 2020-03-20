@@ -22,7 +22,7 @@ size_t print_list(const list_t *h)
 		n = htemp->len;
 		if (s == NULL)
 		{
-			s = "nil";
+			s = "(nil)";
 			n = 0;
 		}
 		printf("[%u] %s\n", n, s);
